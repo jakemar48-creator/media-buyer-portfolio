@@ -69,6 +69,7 @@ a{color:inherit;text-decoration:none}
   color:var(--ink-soft);margin-bottom:28px;
 }
 .eyebrow::before{content:'';width:26px;height:1px;background:var(--accent)}
+.hero .eyebrow::before{display:none}
 .hero h1{
   font-family:'Fraunces',serif;font-weight:500;
   font-size:clamp(2.5rem,5.4vw,4.4rem);
@@ -132,7 +133,7 @@ a{color:inherit;text-decoration:none}
 .substats div:last-child{border-right:none}
 .substats .n{font-family:'Fraunces',serif;font-size:2.1rem;color:var(--on-dark)}
 .substats .d{font-size:.82rem;color:var(--on-dark-soft);margin-top:6px;line-height:1.4}
-@media (max-width:700px){.substats{grid-template-columns:1fr}.substats div{border-right:none;border-bottom:1px solid var(--dark-line)}}
+@media (max-width:700px){.substats{grid-template-columns:1fr;border-top:none}.substats div{border:0}.substats div+div{border-top:1px solid var(--dark-line)}}
 
 /* ---------- section shell ---------- */
 .section{padding:120px 0}
