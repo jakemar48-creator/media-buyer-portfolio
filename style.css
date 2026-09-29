@@ -193,6 +193,27 @@ a{color:inherit;text-decoration:none}
   .project .visuals .row{grid-template-columns:1fr}
 }
 
+/* ---------- creative gallery ---------- */
+.creative-gallery{background:var(--paper-2)}
+.creative-groups{display:grid;gap:64px}
+.creative-group{border-top:1px solid var(--line);padding-top:24px}
+.creative-group-head{display:flex;justify-content:space-between;gap:24px;align-items:baseline;margin-bottom:24px}
+.creative-group-head h3{font-family:'Fraunces',serif;font-weight:500;font-size:1.65rem;letter-spacing:-.015em}
+.creative-group-head p{font-size:.8rem;color:var(--ink-soft);letter-spacing:.04em;text-transform:uppercase}
+.creative-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.creative-card{border:1px solid var(--line);background:#fff;border-radius:var(--radius);overflow:hidden}
+.creative-card img{display:block;width:100%;height:auto}
+.creative-card figcaption{padding:13px 15px 14px;color:var(--ink-soft);font-size:.82rem}
+.creative-grid-more{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:900px){.creative-grid-more{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){
+  .creative-groups{gap:48px}
+  .creative-group-head{display:block}
+  .creative-group-head p{margin-top:7px;line-height:1.4}
+  .creative-grid{gap:12px}
+  .creative-card figcaption{padding:10px 11px 11px;font-size:.72rem;line-height:1.35}
+}
+
 /* ---------- about ---------- */
 .about-centered{max-width:620px;margin:0 auto;text-align:center}
 .about-centered .kicker{display:block;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:24px}
